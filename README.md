@@ -1,4 +1,4 @@
-<h1>Hi there, Dimas Darfi Angga here 👋</h1>
+<h1>Hi there, 👋</h1>
 
 <!-- Header Links -->
 [![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)]([https://github.com/amangupta143](https://github.com/dimasd-angga))
