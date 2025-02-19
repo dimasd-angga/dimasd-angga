@@ -21,7 +21,7 @@
 			<kbd>Programming Languages</kbd>
 			<br>
 			<br>
-			<img alt="Typescript" src="https://img.shields.io/badge/Python-05122A?style=flat&logo=typescript">
+			<img alt="Typescript" src="https://img.shields.io/badge/Typescript-05122A?style=flat&logo=typescript">
 		</kbd>
 	</p>
 	<p>
