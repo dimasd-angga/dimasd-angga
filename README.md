@@ -5,7 +5,7 @@
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/dimasdarfiangga/)
 
 <!-- Short Bio -->
-<p>Welcome to my profile! </br></br> With my Senior Developer Role, my focus has harnessed the power of coding technology to craft dynamic website infrastructure, streamlining operations for a multitude of clients. My role as Senior Frontend Developer has been pivotal in integrating sophisticated solutions that resonate with our core commitment to innovation.
+<p>Welcome to my coding&tech profile! </br></br> With my Senior Developer Role, my focus has harnessed the power of coding technology to craft dynamic website infrastructure, streamlining operations for a multitude of clients. My role as Senior Frontend Developer has been pivotal in integrating sophisticated solutions that resonate with our core commitment to innovation.
 </p>
 
 <!-- Daily Tech Stack -->
