@@ -10,7 +10,7 @@
 <p>Welcome to my profile! </br></br> With my Senior Developer Role, my focus has harnessed the power of coding technology to craft dynamic website infrastructure, streamlining operations for a multitude of clients. My role as Senior Frontend Developer has been pivotal in integrating sophisticated solutions that resonate with our core commitment to innovation.
 </p>
 
-<!-- Tech Stack -->
+<!-- Daily Tech Stack -->
 </br>
 <h2>Tech Stack</h2>
 
