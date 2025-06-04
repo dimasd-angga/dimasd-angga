@@ -50,10 +50,14 @@ Hi, I'm **Dimas**, a passionate **Senior Frontend Developer** based in Indonesia
 
 ### 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=dimasd-angga&show_icons=true&theme=tokyonight&hide_border=true&hide_title=true" width="47%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=dimasd-angga&theme=tokyonight&hide_border=true" width="47%" />
-</p>
+<div align="center" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+
+  <img src="https://github-readme-stats.vercel.app/api?username=dimasd-angga&show_icons=true&theme=tokyonight&hide_border=true&hide_title=true&card_width=400" width="400" height="200" />
+
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=dimasd-angga&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" width="400" height="200" />
+
+</div>
+
 
 ---
 
