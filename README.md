@@ -14,35 +14,41 @@
 
 ### 👨‍💻 About Me
 
-Hi, I'm Dimas, a passionate **Senior Frontend Developer** from Indonesia 🇮🇩 with 4+ years of experience building robust web applications. I specialize in **Next.js**, **React**, and **modern JavaScript**, crafting intuitive interfaces and optimizing frontend performance for scalability.
+Hi, I'm **Dimas**, a passionate **Senior Frontend Developer** based in Indonesia 🇮🇩. With 4+ years of experience in crafting web and mobile apps, I specialize in building scalable, performant, and beautiful UIs using modern JavaScript frameworks and technologies.
 
-- 🔭 I’m currently working on large-scale frontend architecture.
-- ⚡ I focus on seamless UX, efficient data rendering, and scalable design systems.
-- 💬 Ask me about frontend performance, virtualized lists, and custom UI components.
-- 🌱 Continuously learning new patterns and tools in the frontend ecosystem.
+- 🔭 Currently focused on building fullstack apps with **Next.js** and **Node.js**
+- ⚡ Expert in creating optimized frontend solutions for high-volume data
+- 💬 Ask me about performance tuning, large file handling, and keyboard-friendly UI
+- 🌱 Learning deeper backend architecture and system design
 
 ---
 
 ### 🛠️ Tech Stack
 
-#### 📜 Languages
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-
-#### ⚙️ Frameworks & Libraries
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+#### 📜 Languages & Frameworks
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat&logo=tailwind-css&logoColor=white)
-
-#### 🧰 Tools
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white)
-![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=flat&logo=prettier&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB)
 
 ---
 
-### 📊 GitHub Stats
+### 🧰 Tools I Use
+
+![DataGrip](https://img.shields.io/badge/DataGrip-000000?style=flat&logo=datagrip&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=flat&logo=intellij-idea&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
+![Xcode](https://img.shields.io/badge/Xcode-147EFB?style=flat&logo=xcode&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+
+---
+
+### 📈 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=dimasd-angga&show_icons=true&theme=radical" width="47%" />
@@ -53,13 +59,12 @@ Hi, I'm Dimas, a passionate **Senior Frontend Developer** from Indonesia 🇮�
 
 ### ✍️ Quote I Live By
 
-> “Code is like humor. When you have to explain it, it’s bad.” – Cory House
+> “Clean code always looks like it was written by someone who cares.” – Robert C. Martin
 
 ---
 
-### 🎯 Let's Connect!
+### 🤝 Let's Connect
 
-If you’re into **frontend magic**, **performance tuning**, or **collaborating on cool projects**, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/dimasdarfiangga/) or explore my repositories here!
+If you're into **frontend performance**, **intuitive design**, or just want to collaborate on cool projects, let’s connect on [LinkedIn](https://www.linkedin.com/in/dimasdarfiangga/) or dive into my GitHub projects!
 
 ---
-
