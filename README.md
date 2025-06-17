@@ -13,7 +13,7 @@
 
 ### 👨‍💻 About Me
 
-Hi, I'm **Dimas**, a passionate **Fullstack Developer** based in Indonesia 🇮🇩. With 4+ years of experience in web and mobile development, I specialize in building scalable applications using modern technologies. I'm constantly learning and evolving, currently diving deep into AI and LLM programming while working full-time with Next.js and Node.js.
+Hi, I'm **Dimas**, a passionate **Fullstack Developer** based in Indonesia 🇮🇩. With 6+ years of experience in web and mobile development, I specialize in building scalable applications using modern technologies. I'm constantly learning and evolving, currently diving deep into AI and LLM programming while working full-time with Next.js and Node.js.
 
 - 🔭 Currently working as a **fullstack developer** specializing in **Next.js** and **Node.js**
 - 🤖 Learning **AI and LLM programming** to expand my technical horizons
