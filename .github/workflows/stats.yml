@@ -19,38 +19,33 @@ jobs:
       - name: Create generated/ directory
         run: mkdir -p generated
 
-      # Uses lowlighter/metrics — runs 100% in GitHub Actions, no external service needed
+      # lowlighter/metrics runs fully inside GitHub Actions — no external service
+      # It commits generated/stats.svg directly via the token
       # Docs: https://github.com/lowlighter/metrics
-      - name: Generate stats metrics
+      - name: Generate metrics SVG
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: dimasd-angga
           filename: generated/stats.svg
 
-          # Base config
+          # Commit settings — let the action handle the commit itself
+          committer_token: ${{ secrets.METRICS_TOKEN }}
+          committer_message: "chore: refresh metrics [skip ci]"
+          committer_branch: main
+
+          # Layout
           base: header, activity, community, repositories
           base_indepth: yes
-
-          # Styling — matches brutalist dark theme
           config_display: columns
-          config_padding: 0, 8px
-          config_animations: yes
 
-          # Plugins
+          # Languages plugin
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_details: percentage
           plugin_languages_indepth: yes
           plugin_languages_sections: most-used
 
+          # Contribution calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
-
-      - name: Commit updated SVG
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add generated/stats.svg
-          git diff --staged --quiet || git commit -m "chore: refresh metrics [skip ci]"
-          git push
