@@ -19,22 +19,38 @@ jobs:
       - name: Create generated/ directory
         run: mkdir -p generated
 
-      - name: Download stats SVG
-        run: |
-          STATS_URL="https://github-readme-stats.vercel.app/api?username=dimasd-angga&show_icons=true&hide_border=true&bg_color=0a0a0a&title_color=f0f0f0&text_color=888888&icon_color=f0f0f0&count_private=true&cache_seconds=1"
-          curl -s "$STATS_URL" -o generated/stats.svg
-          head -1 generated/stats.svg | grep -q "<svg" || (echo "Stats SVG invalid:" && cat generated/stats.svg && exit 1)
+      # Uses lowlighter/metrics — runs 100% in GitHub Actions, no external service needed
+      # Docs: https://github.com/lowlighter/metrics
+      - name: Generate stats metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: dimasd-angga
+          filename: generated/stats.svg
 
-      - name: Download langs SVG
-        run: |
-          LANGS_URL="https://github-readme-stats.vercel.app/api/top-langs?username=dimasd-angga&layout=compact&hide_border=true&bg_color=0a0a0a&title_color=f0f0f0&text_color=888888&langs_count=8&cache_seconds=1"
-          curl -s "$LANGS_URL" -o generated/langs.svg
-          head -1 generated/langs.svg | grep -q "<svg" || (echo "Langs SVG invalid:" && cat generated/langs.svg && exit 1)
+          # Base config
+          base: header, activity, community, repositories
+          base_indepth: yes
 
-      - name: Commit updated SVGs
+          # Styling — matches brutalist dark theme
+          config_display: columns
+          config_padding: 0, 8px
+          config_animations: yes
+
+          # Plugins
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: percentage
+          plugin_languages_indepth: yes
+          plugin_languages_sections: most-used
+
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+
+      - name: Commit updated SVG
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add generated/stats.svg generated/langs.svg
-          git diff --staged --quiet || git commit -m "chore: refresh GitHub stats [skip ci]"
+          git add generated/stats.svg
+          git diff --staged --quiet || git commit -m "chore: refresh metrics [skip ci]"
           git push
