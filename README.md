@@ -41,50 +41,62 @@ I've shipped production systems for clients and companies across **South Korea**
 <tr>
 <td width="50%" valign="top">
 
-### 🌐 Node.js / React Full-Stack
+**🌐 Node.js / React Full-Stack**
+
 The stack I've used the most — fast, scalable, production-tested.
 
-**Frontend:** React.js · Next.js · TypeScript · Tailwind CSS · Redux · React Query  
-**Backend:** Node.js · Express.js · REST · GraphQL · WebSocket · JWT · OAuth2  
-**Infra:** AWS EC2/S3/RDS · DigitalOcean · Docker · Nginx · CI/CD
+`Frontend` React.js · Next.js · TypeScript · Tailwind CSS · Redux · React Query
 
-*Used at: Hyperhire · Ajaib · Atech Solution · 2Vizcon · Solo Pte Ltd · Dreamhouselab*
+`Backend` Node.js · Express.js · REST · GraphQL · WebSocket · JWT · OAuth2
+
+`Infra` AWS EC2/S3/RDS · DigitalOcean · Docker · Nginx · CI/CD
+
+*Used at: Hyperhire · Ajaib · Atech · 2Vizcon · Solo Pte Ltd · Dreamhouselab*
 
 </td>
 <td width="50%" valign="top">
 
-### 🐍 Python / React Full-Stack
+**🐍 Python / React Full-Stack**
+
 Python-first for async-heavy backends and data pipelines.
 
-**Frontend:** React.js · Next.js · TypeScript · Tailwind CSS  
-**Backend:** Python · FastAPI · asyncio · SQLAlchemy · Pydantic · Celery  
-**Data:** PostgreSQL · MySQL · Redis · background workers · cron jobs
+`Frontend` React.js · Next.js · TypeScript · Tailwind CSS
 
-*Adapted for: fintech platforms · data aggregation · regulated trading systems*
+`Backend` Python · FastAPI · asyncio · SQLAlchemy · Pydantic · Celery
+
+`Data` PostgreSQL · MySQL · Redis · background workers · cron jobs
+
+*Adapted for: fintech · data aggregation · regulated trading systems*
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 📱 Mobile Full-Stack (Flutter / React Native)
+**📱 Mobile Full-Stack (Flutter / React Native)**
+
 Cross-platform mobile with production-grade backends.
 
-**Mobile:** Flutter · Dart · React Native · iOS · Android  
-**Backend:** .NET/C# Web API · Node.js · REST APIs · JWT  
-**Storage:** Firebase · SQL Server · PostgreSQL · local storage
+`Mobile` Flutter · Dart · React Native · iOS · Android
+
+`Backend` .NET/C# Web API · Node.js · REST APIs · JWT
+
+`Storage` Firebase · SQL Server · PostgreSQL · local storage
 
 *Used for: CRM apps · social platforms · enterprise mobile tools*
 
 </td>
 <td width="50%" valign="top">
 
-### ⛓️ Web3 / Blockchain Full-Stack
+**⛓️ Web3 / Blockchain Full-Stack**
+
 On-chain frontend and backend for decentralized apps.
 
-**Frontend:** React.js · Ethers.js · Web3.js · wagmi · wallet integrations  
-**Backend:** Node.js · WebSocket · exchange APIs · real-time data pipelines  
-**Chain:** EVM concepts · smart contract interaction · wallet internals
+`Frontend` React.js · Ethers.js · Web3.js · wagmi · wallet integrations
+
+`Backend` Node.js · WebSocket · exchange APIs · real-time data pipelines
+
+`Chain` EVM concepts · smart contract interaction · wallet internals
 
 *Used at: Hyperhire (Web3 financial analytics platform)*
 
@@ -177,13 +189,23 @@ On-chain frontend and backend for decentralized apps.
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=dimasd-angga&theme=tokyonight&hide_border=true" width="420" />
-  <img src="https://github-readme-stats.vercel.app/api?username=dimasd-angga&show_icons=true&theme=tokyonight&hide_border=true&hide_title=true" width="380" />
+
+  <!-- Streak stats — hosted on git.io/streak-stats (more stable than herokuapp) -->
+  <img src="https://streak-stats.demolab.com?user=dimasd-angga&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" width="420" />
+
+  <!-- General stats — self-hosted vercel deployment is more reliable with cache-busting -->
+  <img src="https://github-readme-stats.vercel.app/api?username=dimasd-angga&show_icons=true&theme=tokyonight&hide_border=true&hide_title=true&count_private=true&cache_seconds=86400" alt="GitHub Stats" width="380" />
+
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dimasd-angga&layout=compact&theme=tokyonight&hide_border=true" width="420" />
+
+  <!-- Top languages — compact layout -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dimasd-angga&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400&langs_count=8" alt="Top Languages" width="420" />
+
 </div>
+
+> 📝 *Stats reflect public repositories. Most production work lives in private/client repos.*
 
 ---
 
