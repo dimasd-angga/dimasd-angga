@@ -19,9 +19,6 @@ jobs:
       - name: Create generated/ directory
         run: mkdir -p generated
 
-      # lowlighter/metrics runs fully inside GitHub Actions — no external service
-      # It commits generated/stats.svg directly via the token
-      # Docs: https://github.com/lowlighter/metrics
       - name: Generate metrics SVG
         uses: lowlighter/metrics@latest
         with:
@@ -29,23 +26,20 @@ jobs:
           user: dimasd-angga
           filename: generated/stats.svg
 
-          # Commit settings — let the action handle the commit itself
+          # Let the action commit & push — do NOT add a separate git push step
+          output_action: commit
           committer_token: ${{ secrets.METRICS_TOKEN }}
           committer_message: "chore: refresh metrics [skip ci]"
           committer_branch: main
 
-          # Layout
+          # Content
           base: header, activity, community, repositories
           base_indepth: yes
           config_display: columns
-
-          # Languages plugin
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_details: percentage
           plugin_languages_indepth: yes
           plugin_languages_sections: most-used
-
-          # Contribution calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
