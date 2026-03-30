@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="900" height="220" viewBox="0 0 900 220">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Serif+Display&amp;display=swap');
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      .root {
+        width: 900px;
+        height: 220px;
+        background: #0a0a0a;
+        border: 3px solid #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 48px;
+        position: relative;
+        overflow: hidden;
+        font-family: 'DM Mono', 'Courier New', monospace;
+      }
+
+      /* Brutalist corner marks */
+      .corner {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-color: #f0f0f0;
+        border-style: solid;
+      }
+      .corner-tl { top: 10px; left: 10px; border-width: 3px 0 0 3px; }
+      .corner-tr { top: 10px; right: 10px; border-width: 3px 3px 0 0; }
+      .corner-bl { bottom: 10px; left: 10px; border-width: 0 0 3px 3px; }
+      .corner-br { bottom: 10px; right: 10px; border-width: 0 3px 3px 0; }
+
+      /* Scan-line texture */
+      .scanlines {
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 3px,
+          rgba(255,255,255,0.012) 3px,
+          rgba(255,255,255,0.012) 4px
+        );
+        pointer-events: none;
+      }
+
+      /* Vertical rule */
+      .rule {
+        position: absolute;
+        left: 48px;
+        top: 28px;
+        bottom: 28px;
+        width: 2px;
+        background: #f0f0f0;
+        transform-origin: top;
+        animation: ruleGrow 0.6s cubic-bezier(0.77,0,0.175,1) 0.1s both;
+      }
+
+      @keyframes ruleGrow {
+        from { transform: scaleY(0); }
+        to   { transform: scaleY(1); }
+      }
+
+      .content {
+        padding-left: 22px;
+      }
+
+      /* Label line */
+      .label {
+        font-family: 'DM Mono', monospace;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        color: #888;
+        text-transform: uppercase;
+        opacity: 0;
+        animation: fadeUp 0.5s ease 0.5s both;
+      }
+
+      /* Main name */
+      .name {
+        font-family: 'DM Serif Display', 'Georgia', serif;
+        font-size: 52px;
+        color: #f0f0f0;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        margin: 6px 0 8px;
+        opacity: 0;
+        animation: fadeUp 0.6s ease 0.65s both;
+      }
+
+      /* Rotating role */
+      .role-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        opacity: 0;
+        animation: fadeUp 0.5s ease 0.85s both;
+      }
+
+      .role-prefix {
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        color: #555;
+        text-transform: uppercase;
+      }
+
+      .role {
+        font-size: 12px;
+        letter-spacing: 0.15em;
+        color: #f0f0f0;
+        text-transform: uppercase;
+        font-weight: 500;
+        border-bottom: 1px solid #f0f0f0;
+        padding-bottom: 1px;
+        /* cycle through roles */
+        animation: cycleText 9s steps(1) 1.2s infinite;
+      }
+
+      @keyframes cycleText {
+        0%  { content: none; } /* fallback handled by span */
+      }
+
+      /* We use clip + translate trick for role cycling */
+      .roles-container {
+        height: 16px;
+        overflow: hidden;
+      }
+
+      .roles-inner {
+        animation: slideRoles 9s steps(1) 1.2s infinite;
+      }
+
+      .role-item {
+        height: 16px;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        color: #f0f0f0;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 16px;
+        border-bottom: 1px solid #f0f0f0;
+        display: inline-block;
+      }
+
+      @keyframes slideRoles {
+        0%   { transform: translateY(0); }
+        33%  { transform: translateY(-16px); }
+        66%  { transform: translateY(-32px); }
+        100% { transform: translateY(0); }
+      }
+
+      /* Tags row */
+      .tags {
+        display: flex;
+        gap: 8px;
+        margin-top: 14px;
+        opacity: 0;
+        animation: fadeUp 0.5s ease 1.05s both;
+      }
+
+      .tag {
+        font-size: 9px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #0a0a0a;
+        background: #f0f0f0;
+        padding: 3px 8px;
+        font-weight: 500;
+      }
+
+      /* Right-side stats block */
+      .stats {
+        position: absolute;
+        right: 48px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: right;
+        opacity: 0;
+        animation: fadeUp 0.6s ease 1.1s both;
+      }
+
+      .stat-num {
+        font-family: 'DM Serif Display', 'Georgia', serif;
+        font-size: 42px;
+        color: #f0f0f0;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+
+      .stat-label {
+        font-size: 9px;
+        letter-spacing: 0.25em;
+        color: #666;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      .stat-divider {
+        width: 100%;
+        height: 1px;
+        background: #333;
+        margin: 10px 0;
+      }
+
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(10px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      /* Blinking cursor */
+      .cursor {
+        display: inline-block;
+        width: 2px;
+        height: 12px;
+        background: #f0f0f0;
+        margin-left: 2px;
+        vertical-align: middle;
+        animation: blink 1s step-end infinite;
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0; }
+      }
+
+      /* Top-right index number */
+      .index {
+        position: absolute;
+        top: 18px;
+        right: 48px;
+        font-size: 9px;
+        letter-spacing: 0.3em;
+        color: #444;
+        text-transform: uppercase;
+      }
+
+      /* Bottom baseline */
+      .baseline {
+        position: absolute;
+        bottom: 18px;
+        left: 48px;
+        right: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0;
+        animation: fadeUp 0.5s ease 1.3s both;
+      }
+
+      .baseline-text {
+        font-size: 8px;
+        letter-spacing: 0.3em;
+        color: #444;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+
+  <foreignObject width="900" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="root">
+      <div class="scanlines"></div>
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div>
+      <div class="corner corner-br"></div>
+
+      <div class="rule"></div>
+
+      <div class="index">PROFILE / 001</div>
+
+      <div class="content">
+        <div class="label">Senior Full-Stack Developer</div>
+
+        <div class="name">Dimas Darfi Angga</div>
+
+        <div class="role-wrap">
+          <span class="role-prefix">→</span>
+          <div class="roles-container">
+            <div class="roles-inner">
+              <div class="role-item">Node.js · React · Architect<span class="cursor"></span></div>
+              <div class="role-item">Flutter · .NET · Mobile Systems<span class="cursor"></span></div>
+              <div class="role-item">Web3 · Fintech · SaaS Builder<span class="cursor"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag">8+ Yrs</span>
+          <span class="tag">Remote-First</span>
+          <span class="tag">6 Countries</span>
+          <span class="tag">Full Lifecycle</span>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-num">08</div>
+        <div class="stat-label">Years Active</div>
+        <div class="stat-divider"></div>
+        <div class="stat-num">07</div>
+        <div class="stat-label">Companies</div>
+      </div>
+
+      <div class="baseline">
+        <span class="baseline-text">Indonesia · UTC+7</span>
+        <span class="baseline-text">dimass.darfiangga@gmail.com</span>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
