@@ -3,11 +3,15 @@
 <br>
 
 <p align="right">
-  <a href="https://www.linkedin.com/in/dimasdarfiangga/"><img src="https://img.shields.io/badge/LINKEDIN-%23f0f0f0?style=flat-square&logo=linkedin&logoColor=black" /></a>
+  <a href="https://www.linkedin.com/in/dimasdarfiangga/"><img src="https://img.shields.io/badge/LINKEDIN-%23f0f0f0?style=flat-square&logo=linkedin&logoColor=black" alt="LinkedIn" /></a>
   &nbsp;
-  <a href="mailto:dimass.darfiangga@gmail.com"><img src="https://img.shields.io/badge/EMAIL-%23f0f0f0?style=flat-square&logo=gmail&logoColor=black" /></a>
+  <a href="mailto:dimass.darfiangga@gmail.com"><img src="https://img.shields.io/badge/EMAIL-%23f0f0f0?style=flat-square&logo=gmail&logoColor=black" alt="Email" /></a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=dimasd-angga&style=flat-square&color=f0f0f0&label=VIEWS" />
+  <a href="https://github.com/dimasd-angga?tab=followers"><img src="https://img.shields.io/github/followers/dimasd-angga?style=flat-square&logo=github&logoColor=black&color=f0f0f0&label=FOLLOWERS" alt="Followers" /></a>
+  &nbsp;
+  <img src="https://img.shields.io/github/stars/dimasd-angga?affiliations=OWNER&style=flat-square&logo=github&logoColor=black&color=f0f0f0&label=STARS" alt="Stars" />
+  &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=dimasd-angga&style=flat-square&color=f0f0f0&label=VIEWS" alt="Views" />
 </p>
 
 ---
@@ -45,6 +49,15 @@ worked_across:
 
 contact: "dimass.darfiangga@gmail.com"
 ```
+
+<p align="center">
+  <a href="#architecture-profiles"><code>&nbsp;architecture&nbsp;</code></a>
+  <a href="#tech-stack"><code>&nbsp;stack&nbsp;</code></a>
+  <a href="#career"><code>&nbsp;career&nbsp;</code></a>
+  <a href="#shipped-at-scale"><code>&nbsp;shipped&nbsp;</code></a>
+  <a href="#activity"><code>&nbsp;activity&nbsp;</code></a>
+  <a href="#contact"><code>&nbsp;contact&nbsp;</code></a>
+</p>
 
 ---
 
@@ -135,6 +148,23 @@ Chain     →  EVM · smart contract calls
 
 ## TECH STACK
 
+**Daily drivers**
+
+![TS](https://img.shields.io/badge/-TypeScript-0a0a0a?style=flat-square&logo=typescript&logoColor=3178C6)
+![Node.js](https://img.shields.io/badge/-Node.js-0a0a0a?style=flat-square&logo=node.js&logoColor=339933)
+![React](https://img.shields.io/badge/-React-0a0a0a?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/-Next.js-0a0a0a?style=flat-square&logo=next.js&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-0a0a0a?style=flat-square&logo=python&logoColor=3776AB)
+![Flutter](https://img.shields.io/badge/-Flutter-0a0a0a?style=flat-square&logo=flutter&logoColor=02569B)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-0a0a0a?style=flat-square&logo=postgresql&logoColor=4169E1)
+![Docker](https://img.shields.io/badge/-Docker-0a0a0a?style=flat-square&logo=docker&logoColor=2496ED)
+![AWS](https://img.shields.io/badge/-AWS-0a0a0a?style=flat-square&logo=amazonwebservices&logoColor=FF9900)
+
+<details>
+<summary><code>&nbsp;expand full stack&nbsp;</code></summary>
+
+<br>
+
 **Languages**
 
 ![JS](https://img.shields.io/badge/-JavaScript-0a0a0a?style=flat-square&logo=javascript&logoColor=F7DF1E)
@@ -193,101 +223,55 @@ Chain     →  EVM · smart contract calls
 ![Ollama](https://img.shields.io/badge/-Ollama-0a0a0a?style=flat-square&logo=ollama&logoColor=white)
 ![Ethers.js](https://img.shields.io/badge/-Ethers.js-0a0a0a?style=flat-square&logo=ethereum&logoColor=white)
 
+</details>
+
 ---
 
-## CAREER TIMELINE
+## CAREER
 
-```
-──────────────────────────────────────────────────────────────────────────────
-
-  2017  ░  IGOID BISNIS GLOBAL
-           Junior Full-Stack Developer                          Jakarta, ID
-           └─ REST APIs · PHP · Node.js · B2B web platforms
-
-  2018  ░  DREAMHOUSELAB                                       [Tech Lead]
-           Full-Stack Developer                                 Jakarta, ID
-           └─ 3 concurrent projects · 20+ source news pipeline
-              AWS/GCP deployments · 100% on-time delivery
-
-  2020  ░  SOLO PTE LTD
-           Full-Stack Developer                                 Singapore
-           └─ React · Node.js · PostgreSQL · AWS EC2
-              100% on-time across all client engagements
-
-  2022  ░  2VIZCON GMBH
-           Full-Stack Developer                          Remote · Frankfurt, DE
-           └─ Squareble — multi-tenant SaaS web builder
-              Stripe/PayPal billing · Puppeteer pipelines · DigitalOcean
-
-  2022  ░  ATECH SOLUTION                                      [Senior]
-           Senior Full-Stack Developer                  Remote · Hong Kong
-           └─ Real-time news platform · 20+ ingestion sources
-              GraphQL · PostgreSQL · Docker CI/CD · 5-person team lead
-
-  2023  ░  AJAIB INDONESIA                                     [Senior]
-           Senior Full-Stack Developer                          Jakarta, ID
-           └─ U.S. Stock Trading platform · thousands of investors
-              SSR/SSG · query optimization · regulatory compliance
-
-  2024  ░  HYPERHIRE                                           [Senior]
-           Senior Full-Stack Developer (Web3)           Remote · South Korea
-           └─ Web3 financial analytics · WebSocket data ingestion
-              TradingView charting · exchange APIs · cross-TZ team
-
-──────────────────────────────────────────────────────────────────────────────
-```
+<div align="center">
+  <img src="./assets/timeline.svg" width="900" alt="Career timeline: IGOID 2017, Dreamhouselab 2018, Solo Pte Ltd 2020, 2Vizcon 2022, Atech 2022, Ajaib 2023, Hyperhire 2024, Sembilan Teknologi 2025-present" />
+</div>
 
 ---
 
 ## SHIPPED AT SCALE
 
-```
-┌────────────────────────────────────────────────────────────────────┐
-│                                                                    │
-│  AJAIB        U.S. Stock Trading platform                          │
-│               Thousands of concurrent retail investors             │
-│               Real-time price feeds · regulated order flows        │
-│                                                                    │
-│  HYPERHIRE    Web3 financial analytics (DeFi)                      │
-│               Real-time crypto data via WebSocket streams          │
-│               TradingView charting · distributed remote team       │
-│                                                                    │
-│  ATECH        News aggregation engine                              │
-│               20+ international sources · scheduled cron jobs      │
-│               GraphQL + REST APIs · live filtering & full search   │
-│                                                                    │
-│  2VIZCON      Squareble — multi-tenant SaaS web builder            │
-│               Drag-and-drop editor · billing · template APIs       │
-│               Full DevOps: Docker · Nginx · SSL · CI/CD            │
-│                                                                    │
-│  DREAMHOUSE   High-traffic news portal                             │
-│               20+ content sources · batch ingestion pipelines      │
-│               Tech Lead — 3 concurrent projects, 0 missed ddls     │
-│                                                                    │
-└────────────────────────────────────────────────────────────────────┘
-```
+| | System | Scale & responsibility |
+|---|---|---|
+| **AJAIB** | U.S. Stock Trading platform | Thousands of concurrent retail investors · real-time price feeds · regulated order flows · SSR/SSG + query optimization |
+| **HYPERHIRE** | Web3 financial analytics (DeFi) | Real-time crypto data over WebSocket streams · TradingView charting · exchange APIs · distributed remote team |
+| **ATECH** | News aggregation engine | 20+ international sources · scheduled cron ingestion · GraphQL + REST · live filtering and full-text search · led 5 engineers |
+| **2VIZCON** | Squareble — multi-tenant SaaS builder | Drag-and-drop editor · Stripe/PayPal billing · template APIs · full DevOps (Docker · Nginx · SSL · CI/CD) |
+| **DREAMHOUSE** | High-traffic news portal | 20+ content sources · batch ingestion pipelines · tech lead on 3 concurrent projects, zero missed deadlines |
 
 ---
 
-## GITHUB STATS
+## ACTIVITY
+
+<!--
+  No GitHub Action / runner involved — every card below is a live image endpoint.
+  If you want private-repo commits counted, deploy your own fork of
+  anuraghazra/github-readme-stats to Vercel and swap the two
+  `github-readme-stats.vercel.app` hostnames for your own.
+-->
 
 <div align="center">
 
-  <!-- Streak card — demolab is the maintained host, reliably up -->
-  <img src="https://streak-stats.demolab.com?user=dimasd-angga&theme=dark&hide_border=true&background=0a0a0a&stroke=333333&ring=f0f0f0&fire=f0f0f0&currStreakNum=f0f0f0&sideNums=f0f0f0&currStreakLabel=888888&sideLabels=888888&dates=555555" width="440" alt="streak" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=dimasd-angga&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=true&hide_title=true&card_width=430&bg_color=0a0a0a&text_color=888888&icon_color=f0f0f0&ring_color=f0f0f0&cache_seconds=86400" alt="GitHub stats" />
+<img height="170" src="https://streak-stats.demolab.com?user=dimasd-angga&hide_border=true&background=0a0a0a&stroke=1f1f1f&ring=f0f0f0&fire=f0f0f0&currStreakNum=f0f0f0&sideNums=f0f0f0&currStreakLabel=888888&sideLabels=888888&dates=555555" alt="Contribution streak" />
+
+<br><br>
+
+<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dimasd-angga&layout=compact&langs_count=8&hide_border=true&hide_title=true&card_width=340&bg_color=0a0a0a&text_color=888888&cache_seconds=86400" alt="Top languages" />
+
+<br><br>
+
+<img width="900" src="https://github-readme-activity-graph.vercel.app/graph?username=dimasd-angga&hide_border=true&hide_title=true&bg_color=0a0a0a&color=f0f0f0&line=f0f0f0&point=ffffff&area=true&area_color=222222" alt="Contribution activity graph" />
 
 </div>
 
-<!-- Stats generated locally by lowlighter/metrics GitHub Action — no external service needed -->
-<!-- See .github/workflows/stats.yml · Setup: add METRICS_TOKEN secret (classic PAT, read:user scope) -->
-
-<div align="center">
-
-  <img src="./generated/stats.svg" width="820" alt="metrics" />
-
-</div>
-
-> *Stats auto-refresh every 24 h via GitHub Actions. Most production work lives in private repos.*
+> *Most production work lives in private repos — the graph is a floor, not a ceiling.*
 
 ---
 
@@ -307,4 +291,4 @@ Chain     →  EVM · smart contract calls
 
 ---
 
-<p align="right"><sub><code>README · dimasd-angga · 2025</code></sub></p>
+<p align="right"><sub><code>README · dimasd-angga · 2026</code></sub></p>
